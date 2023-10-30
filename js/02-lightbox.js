@@ -22,6 +22,9 @@ function createMarkup(arr) {
     .join("");
 }
 const lightbox = new SimpleLightbox(".gallery .gallery__link", {
-  captions: false,
+  captionDelay: 250,
+  captionsData: false,
+  captionType: attr,
+  captionsData: title,
 });
 lightbox.open();
