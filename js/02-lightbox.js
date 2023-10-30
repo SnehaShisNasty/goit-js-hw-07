@@ -21,15 +21,7 @@ function createMarkup(arr) {
     )
     .join("");
 }
-const lightbox = new SimpleLightbox(".gallery a");
-
-document.querySelector(".gallery").addEventListener("click", (event) => {
-  event.preventDefault();
-
-  if (event.target.classList.contains("gallery__image")) {
-    lightbox.open();
-    setTimeout(() => {
-      //Я не розумію як достучатися до caption
-    }, 250);
-  }
+const lightbox = new SimpleLightbox(".gallery .gallery__link", {
+  captions: false,
 });
+lightbox.open();
