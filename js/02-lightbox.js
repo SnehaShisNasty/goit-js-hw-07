@@ -23,8 +23,7 @@ function createMarkup(arr) {
 }
 const lightbox = new SimpleLightbox(".gallery .gallery__link", {
   captionDelay: 250,
-  captionsData: false,
-  captionType: attr,
-  captionsData: title,
+  captionType: "attr",
+  captionsData: "alt",
 });
 lightbox.open();

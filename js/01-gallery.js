@@ -35,10 +35,9 @@ function handleClick(event) {
         return item.preview === event.target.src;
       });
       instance = basicLightbox.create(`
-    <div class = "modal">
+
         <img class="gallery__image" src="${findItem.original}">
-    
-    </div>`);
+    `);
 
       instance.show();
     }
