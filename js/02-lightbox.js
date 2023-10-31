@@ -26,4 +26,4 @@ const lightbox = new SimpleLightbox(".gallery .gallery__link", {
   captionType: "attr",
   captionsData: "alt",
 });
-lightbox.open();
+
